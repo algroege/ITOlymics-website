@@ -4,7 +4,7 @@ $servername = "localhost";
 $username = "multigame";
 $password = "JinaVEWKcFwsJVU6";
 $dbname = "mg";
-// Create connection
+// Create connection a
 $conn = new mysqli($servername, $username, $password, $dbname);
 
   $sql = "SELECT id FROM users ORDER BY RAND() LIMIT 100";
