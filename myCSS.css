@@ -1,0 +1,286 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/*
+    Created on : Dec 4, 2022, 2:08:12 AM
+    Author     : Alex
+*/
+
+
+body {
+  background-color: white;
+  font-family: verdana;
+}
+
+#overlay {
+  position: fixed; /* Sit on top of the page content */
+  display: none; /* Hidden by default */
+  width: 100%; /* Full width (cover the whole page) */
+  height: 100%; /* Full height (cover the whole page) */
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(1,1,1,0.5); /* Black background with opacity */
+  z-index: 2; /* Specify a stack order in case you're using a different order for other elements */
+  cursor: pointer; /* Add a pointer on hover */
+}
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+li.menu {
+  float: left;
+}
+
+li.menu_right {
+  float: right;
+}
+
+a.menu {
+  display: block;
+  padding: 8px;
+  background-color: #222;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+a.active {
+  display: block;
+  padding: 8px;
+  background-color: #00BEFF;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ul.menu{
+  list-style-type: none;
+  margin: 0 auto;
+  padding: 0;
+  overflow: hidden;
+  background-color: #222;
+  max-width: 960px;
+  min-width: 800px;
+}
+
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #00BEFF;
+}
+
+table {
+  max-width: 960px;
+  margin: 5px auto;
+}
+
+caption {
+  font-size: 18px;
+  font-weight: 400;
+  padding: 12px 0;
+}
+
+thead th {
+    background: #00BEFF;
+    color: #fff;
+    font-weight: initial;
+    text-align: center;
+    padding: 24px 24px;
+}
+
+tr {
+    background: #f1f1f1;
+
+}
+
+tr:nth-child(2n) {
+    background: #e0e0e0;
+}
+
+td {
+  text-align: center;
+  padding: 12px 24px;
+}
+
+td.name {
+  text-align: left;
+  padding: 12px 24px;
+}
+
+td.total_score {
+  font-weight: bold;
+}
+
+tfoot tr { background: none; }
+
+tfoot td {
+  padding: 12px 2px;
+  font-style: italic;
+  color: #8a97a0;
+}
+#text {
+  font-size: 13px;
+  color: #8a97a0;
+}
+#game_terminal_container {
+  width: 800px;
+  margin: 0px auto;
+}
+
+#login_container {
+    margin: 20px auto;
+    width: 150px;
+    height: 600px;
+    padding: 0px;
+    border-width: 1px;
+    border-color: black;
+    border-style: none;
+}
+
+#match_container {
+  border-width: 1px;
+  border-color: black;
+  border-style: none;
+  float: left;
+  padding: 30px 30px;
+
+}
+
+#match_title {
+  color: #00BEFF;
+  font-weight: lighter;
+  font-size: 20px;
+  text-align: center;
+  padding: 5px 5px;
+}
+
+#game_terminal_title {
+  margin: 10px auto;
+  width: 200px;
+  color: #000;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+  padding: 5px 5px;
+}
+#register_title {
+  margin: 20px auto;
+  width: 120px;
+  color: #000;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: center;
+}
+#register_container {
+    margin: 20px auto;
+    width: 120px;
+    border-width: 1px;
+    border-color: black;
+    border-style: none;
+}
+#match_teams {
+  text-align: center;
+  font-weight: bold;
+}
+#table_container {
+  float: left;
+}
+
+#table_container_single {
+}
+.match_score {
+  margin: auto;
+}
+
+th.table_caption {
+  background: white;
+  color: #000;
+  font-weight: normal;
+  font-size: 30px;
+  text-align: center;
+  padding: 5px 5px;
+}
+
+#score_container {
+  width: 90px;
+  background: white;
+  margin: 10px auto;
+  margin-bottom: 20px;
+  border-width: 1px;
+  border-color: black;
+  border-style: none;
+}
+
+#player_dropdown {
+  width: 100px;
+}
+
+#game_dropdown {
+  width: 150px;
+}
+
+#login_button {
+  margin: 15px auto;
+  margin-left: 50px;
+}
+
+#insert_match_result_button {
+  margin: 10px auto;
+  margin-left: 40px;
+  width: 90px;
+}
+
+/* Callout */
+.callout {
+  position: fixed;
+  margin-left: 20px;
+  max-width: 300px;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  z-index: 10;
+}
+
+.callout-header {
+  padding-top: 30px;
+  padding: 15px 15px;
+  background: #00BEFF;
+  font-size: 15px;
+  color: white;
+}
+
+.callout-container {
+  padding: 15px;
+  background-color: white;
+  color: black
+}
+
+.closebtn {
+  position: absolute;
+  top: 0px;
+  right: 2px;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.closebtn:hover {
+  color: lightgrey;
+}
+.submit_overview {
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  border-width: 1px;
+  border-color: black;
+  border-style: none;
+}
